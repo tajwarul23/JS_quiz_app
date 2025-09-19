@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body
+    class="bg-black flex min-h-screen justify-center items-center text-white"
+  >
+    <div class="container bg-gray-600 p-5 rounded-md max-w-md flex flex-col">
+      <h1 class="text-center text-3xl font-bold">Quiz App</h1>
+      <hr class="mt-2 text-black font-bold" />
+      <hr class="text-black font-bold" />
+      <hr class="text-black font-bold" />
+      <div id="quiz-container">
+        <div id="question-container" class="flex flex-col hidden">
+          <h2
+            id="question-text"
+            class="font-semibold mt-5 text-center text-2xl mb-2"
+          ></h2>
+          <ul id="options" class="text-center">
+            <!--options will be added here  -->
+
+            \
+          </ul>
+          <button
+            id="next-btn"
+            class="cursor-pointer mx-auto w-fit text-center mt-5 bg-blue-600 p-5 rounded-b-2xl text-xl font-semibold"
+          >
+            Next Question
+          </button>
+        </div>
+      </div>
+
+      <div id="result-container" class="hidden">
+        <h2>Your Score:</h2>
+        <p id="score"></p>
+        <button
+          id="restart-btn"
+          class="cursor-pointer mx-auto w-fit text-center mt-5 bg-blue-600 p-5 rounded-b-2xl text-xl font-semibold"
+        >
+          Restart Quiz
+        </button>
+      </div>
+      <button
+        id="start-btn"
+        class="cursor-pointer w-fit mx-auto text-center mt-5 bg-blue-600 p-5 rounded-b-2xl text-xl font-semibold"
+      >
+        Start Quiz
+      </button>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
